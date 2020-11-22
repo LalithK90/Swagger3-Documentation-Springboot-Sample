@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 @RestController
-@RequestMapping("/contact")
+@RequestMapping( "/contact" )
 public class ContactController {
   ConcurrentHashMap< String, Contact > contacts = new ConcurrentHashMap<>();
 
@@ -19,7 +19,7 @@ public class ContactController {
 
   @GetMapping
   public List< Contact > getAllContact() {
-    return new ArrayList< Contact >(contacts.values());
+    return new ArrayList<>(contacts.values());
   }
 
   @PostMapping
@@ -29,3 +29,4 @@ public class ContactController {
   }
 
 }
+
