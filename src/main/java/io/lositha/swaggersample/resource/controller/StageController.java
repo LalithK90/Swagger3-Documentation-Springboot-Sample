@@ -40,4 +40,11 @@ public class StageController {
     System.out.println(stage.getMultipartFile().getOriginalFilename());
   }
 
+  @PostMapping( value = "stageObjectWithMultipart" )
+  public void stageObjectWithParameter(
+      @RequestBody final Stage stage,
+      @RequestParam final MultipartFile file) {
+    System.out.println(stage.getMultipartFile().getOriginalFilename());
+    System.out.println(file.getOriginalFilename());
+  }
 }
