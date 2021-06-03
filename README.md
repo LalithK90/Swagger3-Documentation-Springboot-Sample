@@ -25,7 +25,7 @@ Now there is *no extra configuration* to *activate swagger* on the spring-boot p
 
 In swagger version 3 remove the ```@EnableSwagger2``` annotation base config also.
 
-And most of the user tries to find HTML swagger document file using ```host}/swagger-ui.html``` or ```{host}/swagger-ui``` those are now removed.
+And most of the user tries to find HTML swagger document file using ```{host}/swagger-ui.html``` or ```{host}/swagger-ui``` those are now removed.
 
 **use** ```{host}/swagger-ui/``` to see the HTML document
 
